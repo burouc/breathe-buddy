@@ -1,3 +1,6 @@
-<p>
-  svg works!
-</p>
+<svg>
+    <svg:g *ngFor="let circle of circles"
+           appSvgCircle
+           [circleProperties]="circle">
+    </svg:g>
+</svg>
